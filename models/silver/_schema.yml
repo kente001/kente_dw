@@ -1,0 +1,10 @@
+﻿version: 2
+
+models:
+  - name: slv_crm_cust_info
+    description: "Cleaned CRM customers, deduped to latest record per cst_id"
+    columns:
+      - name: cst_id
+        tests:
+          - unique
+          - not_null
